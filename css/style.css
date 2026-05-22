@@ -1,7 +1,8 @@
 /*Mã nguồn css*/
 body {
     font-family: "Times New Roman", serif;
-    background-color: white;
+    background-color: #d3d3d3;
+    color: #006699;
 }
 
 .container {
@@ -76,6 +77,15 @@ td {
 ul,
 ol {
     margin-top: 5px;
+}
+
+li {
+    transition: color 0.2s ease, background-color 0.2s ease;
+}
+
+li:hover {
+    color: white;
+    background-color: #007acc;
 }
 
 a {
