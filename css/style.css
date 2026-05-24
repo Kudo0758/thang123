@@ -115,3 +115,15 @@ h4 {
   color: red;
   font-size: 222px;
 }
+
+/* Bo tròn mọi hình ảnh (corner rounding) */
+img {
+  border-radius: 8px;
+  display: inline-block;
+}
+
+/* Ảnh avatar hiển thị dạng tròn */
+.avatar {
+  border-radius: 50%;
+  overflow: hidden;
+}
