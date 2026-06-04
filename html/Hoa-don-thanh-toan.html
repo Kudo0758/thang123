@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title> Hóa đơn thanh toán </title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/hoa-don.css">
+    <script src="../js/lib.js"></script>
+    <script src="../js/hoa-don.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        
+        <div class="invoice-header">
+            <div class="company-info">
+                <h1>CÔNG TY CỔ PHẦN XYZ</h1>
+                <p><strong>Địa chỉ:</strong> 123 Đường ABC, Quận 1, TP. Hồ Chí Minh</p>
+                <p><strong>Điện thoại:</strong> (028) 1234 5678</p>
+                <p><strong>Email:</strong> info@company.com</p>
+                <p><strong>Mã số thuế:</strong> 0123456789</p>
+            </div>
+            <div class="invoice-title">
+                <h2>HÓA ĐƠN THANH TOÁN</h2>
+                <p><strong>Số HĐ:</strong> HD-2026-001</p>
+                <p><strong>Ngày lập:</strong> 04/06/2026</p>
+            </div>
+        </div>
+
+        
+        <div class="customer-info">
+            <h3>THÔNG TIN KHÁCH HÀNG</h3>
+            <table class="info-table">
+                <tr>
+                    <td><strong>Tên khách hàng:</strong> Nguyễn Văn A</td>
+                    <td><strong>Điện thoại:</strong> 0987 654 321</td>
+                </tr>
+                <tr>
+                    <td><strong>Địa chỉ:</strong> 456 Đường DEF, Quận 2</td>
+                    <td><strong>Email:</strong> customer@example.com</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="invoice-form">
+            <h3>Nhập dữ liệu sản phẩm</h3>
+            <div class="form-grid">
+                <label>
+                    Tên sản phẩm
+                    <input id="product-name" type="text" placeholder="Nhập tên sản phẩm">
+                </label>
+                <label>
+                    Đơn giá
+                    <input id="product-price" type="number" min="0" placeholder="Nhập đơn giá">
+                </label>
+                <label>
+                    Số lượng
+                    <input id="product-quantity" type="number" min="1" placeholder="Nhập số lượng">
+                </label>
+                <label>
+                    Đơn vị tính
+                    <input id="product-unit" type="text" placeholder="Ví dụ: Cái, Bộ, Lần">
+                </label>
+            </div>
+            <div class="form-actions">
+                <button id="add-product-button" type="button" class="btn btn-primary">➕ Thêm sản phẩm</button>
+                <button id="calculate-button" type="button" class="btn btn-secondary">✅ Tính hóa đơn</button>
+            </div>
+            <p class="hint">Bạn phải nhập ít nhất 1 sản phẩm trước khi bấm "Tính hóa đơn".</p>
+        </div>
+
+        <div class="invoice-items">
+            <table class="invoice-table">
+                <thead>
+                    <tr>
+                        <th>STT</th>
+                        <th>Tên Sản Phẩm</th>
+                        <th>Đơn Giá</th>
+                        <th>Số Lượng</th>
+                        <th>Đơn Vị Tính</th>
+                        <th>Thành Tiền</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="placeholder-row">
+                        <td colspan="6">Chưa có sản phẩm. Vui lòng nhập sản phẩm và bấm "Thêm sản phẩm".</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+       
+        <div class="invoice-summary" style="display: none;">
+            <table class="summary-table">
+                <tr>
+                    <td class="label">Tổng tiền hàng:</td>
+                    <td class="amount">0</td>
+                </tr>
+                <tr>
+                    <td class="label">Thuế VAT (10%):</td>
+                    <td class="amount">0</td>
+                </tr>
+                <tr class="total-row">
+                    <td class="label"><strong>TỔNG CỘNG:</strong></td>
+                    <td class="amount"><strong>0</strong></td>
+                </tr>
+            </table>
+        </div>
+
+        
+        <div class="invoice-notes">
+            <h3>GHI CHÚ</h3>
+            <p>- Hóa đơn này có giá trị từ ngày 04/06/2026</p>
+            <p>- Cảm ơn bạn đã sử dụng dịch vụ của chúng tôi</p>
+            <p>- Vui lòng thanh toán trong vòng 30 ngày kể từ ngày lập hóa đơn</p>
+        </div>
+
+        
+        <div class="invoice-footer">
+            <table class="footer-table">
+                <tr>
+                    <td class="center">
+                        <strong>Người lập hóa đơn</strong><br><br>
+                        _____________________
+                    </td>
+                    <td class="center">
+                        <strong>Người phê duyệt</strong><br><br>
+                        _____________________
+                    </td>
+                    <td class="center">
+                        <strong>Khách hàng ký nhận</strong><br><br>
+                        _____________________
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
