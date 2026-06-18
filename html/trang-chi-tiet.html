@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Chi tiết sản phẩm — Cổ điển Boutique</title>
+  <link rel="stylesheet" href="../css/chi-tiet.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo">Cổ Điển Boutique</div>
+      <nav>
+        <a href="/">Trang chủ</a>
+        <a href="../html/trang-1.html">Sản phẩm</a>
+        <a href="../html/login.html">Liên hệ</a>
+      </nav>
+    </header>
+
+    <div class="breadcrumb">Trang chủ › Sản phẩm › <strong>Váy Vintage Linen</strong></div>
+
+    <section class="product">
+      <div class="image-wrap">
+        <img src="../assets/images/sanpham1.jfif" alt="Váy Vintage Linen" />
+      </div>
+
+      <div class="info">
+        <h1>Váy Vintage Linen — Màu Kem</h1>
+        <div class="price">
+          <div class="now">₫1.250.000</div>
+          <div class="old">₫1.500.000</div>
+        </div>
+        <p class="short">Thiết kế cổ điển, chất liệu linen thoáng mát, phom dáng suông thanh lịch — thích hợp cho mọi dịp.</p>
+
+        <div class="options">
+          <label>Size
+            <select aria-label="Chọn size">
+              <option>S</option>
+              <option>M</option>
+              <option>L</option>
+            </select>
+          </label>
+
+          <div class="qty">
+            <label>Số lượng</label>
+            <input type="number" id="qty" value="1" min="1" style="width:72px" />
+          </div>
+        </div>
+
+        <div style="display:flex;gap:12px;margin-top:10px;align-items:center">
+          <button class="add" id="addToCart">Thêm vào giỏ</button>
+          <div style="font-size:13px;color:#6b5656">Giao hàng trong 2-4 ngày</div>
+        </div>
+
+        <div class="meta">
+          <div>Chất liệu: 100% linen</div>
+          <div>Thương hiệu: Cổ Điển Boutique</div>
+          <div>Mã sản phẩm: CD-2026-001</div>
+        </div>
+
+        <div class="tabs">
+          <div>
+            <button onclick="showTab('desc')">Mô tả</button>
+            <button onclick="showTab('details')">Chi tiết</button>
+          </div>
+          <div id="desc" class="tab-panel">
+            <p>Váy linen cổ điển cắt may tỉ mỉ, đường chỉ chắc chắn. Phù hợp cho dạo phố và sự kiện nhẹ nhàng.</p>
+          </div>
+          <div id="details" class="tab-panel" style="display:none">
+            <ul>
+              <li>Giặt tay / giặt lạnh</li>
+              <li>Dài váy: 110 cm (size M)</li>
+              <li>Không co rút nhiều sau khi giặt</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>© 2026 Cổ Điển Boutique • Thiết kế phong cách cổ điển</footer>
+  </div>
+
+    <script src="../js/cart.js"></script>
+    <script src="../js/chi-tiet.js"></script>
+  </body>
+  </html>
