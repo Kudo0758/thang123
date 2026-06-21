@@ -8,61 +8,91 @@
 </head>
 <body>
   <div class="container">
-    <h1>Trần Văn Thắng</h1>
-    <h2>Trang thông tin cá nhân</h2>
-    <p></p>
-<!-- Giới thiệu bản thân -->
-    <div class="intro-box">
-      <img class="avatar" src="assets/images/tranvanthang.jpg" alt="avartar">
+    <!-- Header: tên và mô tả ngắn -->
+    <header>
+      <h1>Trần Văn Thắng</h1>
+      <h2>Trang thông tin cá nhân</h2>
+    </header>
+
+    <!-- Navigation: liên kết đến các trang trong thư mục html/ -->
+    <nav class="site-nav" aria-label="Các trang">
+      <div class="section-title">Các Trang</div>
+      <ul>
+        <li><a href="html/trang-1.html">Trang 1</a></li>
+        <li><a href="html/trang-san-pham.html">Trang sản phẩm</a></li>
+        <li><a href="html/trang-chi-tiet.html">Trang chi tiết</a></li>
+        <li><a href="html/bang-cuu-chuong.html">Bảng cửu chương</a></li>
+        <li><a href="html/Hoa-don-thanh-toan.html">Hóa đơn</a></li>
+        <li><a href="html/login.html">Đăng nhập</a></li>
+      </ul>
+    </nav>
+
+    <!-- Giới thiệu bản thân: ảnh + mô tả ngắn -->
+    <section class="intro-box">
+      <img class="avatar" src="assets/images/tranvanthang.jpg" alt="avatar">
       <div class="intro-content">
         <h3>Giới thiệu bản thân</h3>
-        <p>Xin chào! Tôi là <b>Trần Văn Thắng</b>, sinh viên ngành <b>Công nghệ thông tin</b>. Tôi yêu thích lập trình và thiết kế web. Mục tiêu của tôi là trở thành một lập trình viên chuyên nghiệp.</p>
-        <p>Tôi đang học tại <a href="https://www.tvu.edu.vn/">Đại học Trà Vinh</a>. Tôi luôn muốn phát triển bản thân và kỹ năng lập trình của mình, tôi sẽ hoàn thiện tốt bản thân và sẽ luôn phát huy điểm mạnh.</p>
+        <p>Xin chào! Tôi là <strong>Trần Văn Thắng</strong>, sinh viên ngành <strong>Công nghệ thông tin</strong>. Tôi yêu thích lập trình và thiết kế web. Mục tiêu của tôi là trở thành một lập trình viên chuyên nghiệp.</p>
+        <p>Tôi đang học tại <a href="https://www.tvu.edu.vn/">Đại học Trà Vinh</a> và luôn muốn phát triển kỹ năng lập trình cũng như thiết kế web.</p>
       </div>
-    </div>
-    <!-- Thông tin chi tiết -->
-    <div class="section-title">Thông tin chi tiết</div>
-    <table>
-      <tr>
-        <th>Thông tin</th>
-        <th>Nội dung</th>
-      </tr>
-      <tr>
-        <td>Họ và tên</td>
-        <td>Trần Văn Thắng</td>
-      </tr>
-      <tr>
-        <td>Tuổi</td>
-        <td>19</td>
-      </tr>
-      <tr>
-        <td>Lớp</td>
-        <td>DA25TTB</td>
-      </tr>
-      <tr>
-        <td>Nơi học tập</td>
-        <td>Đại học Trà Vinh</td>
-      </tr>
-    </table>
+    </section>
 
-    <div class="section-title">Sở thích</div>
-    <ul>
-      <li>Nghe nhạc</li>
-      <li>Xem phim</li>
-      <li>Chơi game</li>
-    </ul>
+    <!-- Thông tin chi tiết cá nhân -->
+    <section>
+      <div class="section-title">Thông tin chi tiết</div>
+      <table>
+        <tr>
+          <th>Thông tin</th>
+          <th>Nội dung</th>
+        </tr>
+        <tr>
+          <td>Họ và tên</td>
+          <td>Trần Văn Thắng</td>
+        </tr>
+        <tr>
+          <td>Tuổi</td>
+          <td>19</td>
+        </tr>
+        <tr>
+          <td>Lớp</td>
+          <td>DA25TTB</td>
+        </tr>
+        <tr>
+          <td>Nơi học tập</td>
+          <td>Đại học Trà Vinh</td>
+        </tr>
+      </table>
+    </section>
 
-    <div class="section-title">Kỹ năng và mục tiêu</div>
-    <ol>
-      <li>Biết HTML cơ bản</li>
-      <li>Đang Học thiết kế web</li>
-      <li>Muốn làm website cá nhân</li>
-    </ol>
+    <!-- Sở thích -->
+    <section>
+      <div class="section-title">Sở thích</div>
+      <ul>
+        <li>Nghe nhạc</li>
+        <li>Xem phim</li>
+        <li>Chơi game</li>
+      </ul>
+    </section>
+
+    <!-- Kỹ năng và mục tiêu -->
+    <section>
+      <div class="section-title">Kỹ năng và mục tiêu</div>
+      <ol>
+        <li>Biết HTML cơ bản</li>
+        <li>Đang học thiết kế web</li>
+        <li>Muốn làm website cá nhân</li>
+      </ol>
+    </section>
+
+    <!-- Liên kết tham khảo -->
     <p><a href="html/trang-1.html">Giới thiệu về ao bà om</a></p>
 
-    <div class="section-title">Liên hệ</div>
-    <p>Facebook: <a href="https://www.facebook.com/tran.van.thang.52634?locale=vi_VN">Fb: Trần Văn Thắng</a></p>
-    <p>Email: <a href="mailto: tranthang2008ue@gmai.com">tranthang2008ue@gmail.com</a></p>
+    <!-- Thông tin liên hệ -->
+    <footer>
+      <div class="section-title">Liên hệ</div>
+      <p>Facebook: <a href="https://www.facebook.com/tran.van.thang.52634?locale=vi_VN">Fb: Trần Văn Thắng</a></p>
+      <p>Email: <a href="mailto:tranthang2008ue@gmai.com">tranthang2008ue@gmail.com</a></p>
+    </footer>
   </div>
 </body>
 </html>

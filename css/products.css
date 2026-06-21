@@ -1,0 +1,26 @@
+/* Optimized product page styles — default text color set to black */
+body{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  background:#fbf6f0;
+  color:#000;
+  margin:0;
+  padding:20px;
+}
+.container{max-width:1100px;margin:0 auto}
+header{display:flex;justify-content:space-between;align-items:center;margin-bottom:20px}
+.logo{font-size:24px}
+.cart{font-size:14px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.card{background:#fff8f1;padding:14px;border:1px solid rgba(0,0,0,0.04)}
+.card img{width:100%;height:180px;object-fit:cover;display:block}
+.card h3{margin:10px 0 6px 0;font-size:18px}
+.card h3 a{color:#000;text-decoration:none}
+.card h3 a:hover{text-decoration:underline}
+.price{color:#000;font-weight:700}
+.card .actions{display:flex;gap:8px;align-items:center;margin-top:8px}
+.card input.qty{width:56px;padding:6px}
+.add-btn{background:#33aab0;color:#000;border:none;padding:8px 10px;cursor:pointer}
+/* Ensure all links use black text unless otherwise styled */
+a{color:#000}
+@media(max-width:900px){.grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:600px){.grid{grid-template-columns:1fr}}
